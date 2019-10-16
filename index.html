@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>E-rob Vending Machine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div v-bind:class="(singleProduct ? 'single-product grid' : 'grid') + ' ' + host">
+      <div v-if="host === 'localhost'">
+        Local Market
+      </div>
+
+      <div v-if="host === 'vending'">
+        VENDING
+      </div>
+
+      <div v-if="host === 'b0l'">
+        B0l
+      </div>
+
+      <div v-if="host === 'marktplace'">
+        M A R K T P L A C E
+      </div>
+
+
+      <div v-for="entry in entries" class="entry">
+        <div class="entry--image" v-bind:style="`background: url('https://assets.e-rob.nl/` + entry.image + `') center / cover`"></div>
+
+        <h2>{{ entry.title }}</h2>
+        <h3>&euro; {{ entry.price }}</h3>
+
+        <img v-bind:src="'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://vending.e-rob.nl/%23' + entry._id" class="qr">
+
+        <div v-if="singleProduct" class="button--submit">
+          HERE IS A BUTTON TO CONTACT THE SELLER
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

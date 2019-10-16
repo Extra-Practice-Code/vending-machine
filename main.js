@@ -5,7 +5,14 @@ const app = new Vue({
   data: {
     entries: [],
     singleProduct: false,
-    host: false
+    host: false,
+    marketplaces: [
+      'vending.e-rob.nl',
+      'b0l.site',
+      'aliespress.xyz',
+      'marktplace.xyz',
+      'craiggslist.pw'
+    ]
   },
   mounted () {
     if (window.location.hash && window.location.hash.slice(1)) {

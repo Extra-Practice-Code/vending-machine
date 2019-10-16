@@ -10,7 +10,8 @@
 <body>
   <div id="app">
     <div v-bind:class="(singleProduct ? 'single-product grid' : 'grid')">
-
+      
+      <div v-if="singleProduct">LOGO</div>
 
       <div v-for="entry in entries" class="entry">
         <div class="entry--image" v-bind:style="`background: url('https://assets.e-rob.nl/` + entry.image + `') center / cover`"></div>

@@ -82,6 +82,7 @@ img {
 }
 
 .qr {
+  margin-bottom: 5px;
   position: absolute;
   bottom: 0;
   right: 1rem;
@@ -99,12 +100,12 @@ img {
 
 .button--submit {
   display: inline-block;
-  background: red;
   color: black;
   padding: 1rem 2rem;
   margin: 1rem;
-  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
   border: 1px solid black;
+  text-decoration: none;
 }
 
 @keyframes appear {

@@ -98,3 +98,22 @@ img {
   0% { transform: scale(0.01) }
   100% { transform: scale(1) }
 }
+
+/* ORDER COMPLETION STLYES */
+
+#header {
+  margin: 10px auto;
+  padding: 10px 0px 5px 0px;
+  width: 90%;
+  height: 7rem;
+  background-color: #fff;
+  text-align: center;
+  color: rgb(226, 41, 5);
+  box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+#delivery {
+  margin: 0px auto;
+  width: 90%;
+  text-align: center;
+}

@@ -52,7 +52,7 @@ img {
   width: 90%;
   max-width: 20rem;
   padding: 1rem;
-  margin: 1rem;
+  margin: 2rem 1rem;
   border-radius: 1rem;
   box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.2);
   animation: appear 0.3s ease-in-out forwards;

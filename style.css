@@ -66,11 +66,11 @@ img {
 .entry h2 {
   width: 100%;
   margin: 0.75rem 0 0.5rem;
-  padding-right: 5rem;
+  padding-right: 4rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: rgb(54, 102, 224);
 }
 
@@ -88,7 +88,7 @@ img {
   position: absolute;
   bottom: 0;
   right: 1rem;
-  max-width: 5rem;
+  max-width: 4rem;
 }
 
 .single-product .qr {

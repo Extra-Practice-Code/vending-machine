@@ -8,10 +8,6 @@ const app = new Vue({
     host: false,
     marketplaces: [
       'vending.e-rob.nl',
-      'b0l.site',
-      'aliespress.xyz',
-      'marktplace.xyz',
-      'craiggslist.pw'
     ]
   },
   mounted () {
